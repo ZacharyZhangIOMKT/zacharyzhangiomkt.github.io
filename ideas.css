@@ -1,0 +1,47 @@
+/* A visual methods map and stronger hierarchy for Structural Models × AI. */
+.ideas-page .ideas-hero{padding-top:54px;padding-bottom:0}
+.ideas-page .ideas-hero>.eyebrow{margin-bottom:17px}
+.ideas-page .ideas-hero>h1{font-size:clamp(43px,5.1vw,68px);line-height:1.08;letter-spacing:-2px;margin-bottom:21px}
+.ideas-page .ideas-hero>h1 em{white-space:nowrap}
+.ideas-page .ideas-lead{max-width:820px;font-size:21px;line-height:1.6;color:var(--ink);margin-bottom:32px}
+.ideas-page .concept-map{margin:0;background:#f5f5f5;padding:24px 24px 18px}
+.ideas-page .structure-band,.ideas-page .learning-band{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:18px 22px}
+.ideas-page .structure-band{background:var(--ink);color:#fff}
+.ideas-page .learning-band{background:var(--red);color:#fff}
+.ideas-page .band-title{font-size:17px;letter-spacing:.04em;font-weight:700}
+.ideas-page .band-description{font-size:14px;text-align:right}
+.ideas-page .map-stages{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;padding:28px 0}
+.ideas-page .map-node{position:relative;display:flex;flex-direction:column;background:#fff;text-decoration:none;border:1px solid #dedede;padding:18px 17px;min-width:0;transition:border-color .15s,background .15s}
+.ideas-page .map-node:before{content:"";position:absolute;left:50%;top:-29px;height:28px;border-left:2px solid var(--ink)}
+.ideas-page .map-node:after{content:"";position:absolute;left:50%;bottom:-29px;height:28px;border-left:2px solid var(--red)}
+.ideas-page .map-node:hover{border-color:var(--red);background:#fff9f9}
+.ideas-page .map-constraint{font-size:13px;line-height:1.45;color:var(--muted);min-height:38px;margin-bottom:18px}
+.ideas-page .map-node h2{font-family:var(--sans);font-weight:650;font-size:20px;line-height:1.2;letter-spacing:-.65px;margin-bottom:17px}
+.ideas-page .map-node h2 span{color:var(--red)}
+.ideas-page .map-input{font-size:13px;line-height:1.5;color:var(--muted);min-height:40px}
+.ideas-page .map-output{font-family:var(--serif);font-size:28px;line-height:1.18;letter-spacing:-.4px;padding:15px 0 18px;flex:1;border-top:2px solid var(--red)}
+.ideas-page .map-tool{font-size:13px;line-height:1.5;color:var(--accent);font-weight:600;min-height:39px}
+.ideas-page .concept-map figcaption{font-size:13px;line-height:1.6;color:var(--muted);padding-top:15px}
+.ideas-page .compatibility{display:grid;grid-template-columns:260px 1fr;gap:35px;padding:36px 0 46px;align-items:start}
+.ideas-page .compatibility h2{font-family:var(--sans);font-size:20px;font-weight:600;line-height:1.4;margin:2px 0 0}
+.ideas-page .compatibility p{font-size:16px;line-height:1.85;margin:0}
+.ideas-page .method-sections{padding-bottom:35px}
+.ideas-page .method-section{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.35fr);gap:58px;border-top:1px solid var(--line);padding:54px 0 58px;scroll-margin-top:120px}
+.ideas-page .method-heading h2{font-family:var(--sans);font-size:clamp(32px,3.65vw,49px);font-weight:650;line-height:1.15;letter-spacing:-1.8px;margin-bottom:22px;overflow-wrap:normal}
+.ideas-page .method-heading h2 span{color:var(--red)}
+.ideas-page .method-heading h3{font-size:27px;line-height:1.4;color:var(--muted);letter-spacing:-.3px}
+.ideas-page .method-body p{font-size:16px;line-height:1.85;margin-bottom:20px}
+.ideas-page .method-body strong{font-weight:600;color:var(--ink)}
+.ideas-page .method-body .direction{border-left:3px solid var(--red);padding:3px 0 3px 19px;margin:25px 0}
+.ideas-page .direction strong{display:block;font-size:14px;color:var(--accent);margin-bottom:8px}
+.ideas-page .method-body .method-reading{font-size:14px;margin-bottom:0}
+.ideas-page .method-reading a{color:var(--accent)}
+.ideas-page #readings{padding-bottom:50px;scroll-margin-top:120px}
+.ideas-page #readings .research-group-heading{border-top:2px solid var(--red)}
+.ideas-page #readings .research-group-heading h2{font-size:36px}
+.ideas-page #readings .research-group-heading p{font-size:16px;max-width:800px}
+.ideas-page .reading-list{max-width:100%;display:grid;grid-template-columns:1fr 1fr;column-gap:55px;row-gap:7px;margin-top:8px}
+.ideas-page .reading-list li{padding-bottom:24px}
+@media(max-width:1000px){.ideas-page .map-stages{gap:12px}.ideas-page .concept-map{padding:20px 16px 16px}.ideas-page .map-node{padding:15px 12px}.ideas-page .map-node h2{font-size:17px;letter-spacing:-.4px}.ideas-page .map-output{font-size:25px}.ideas-page .band-description{font-size:13px}.ideas-page .band-title{font-size:15px}.ideas-page .method-section{gap:35px}.ideas-page .method-heading h2{font-size:34px;letter-spacing:-1.2px}}
+@media(max-width:850px){.ideas-page .ideas-hero{padding-top:40px}.ideas-page .ideas-lead{font-size:18px}.ideas-page .map-stages{grid-template-columns:1fr 1fr;gap:18px;padding:22px 0}.ideas-page .map-node:before,.ideas-page .map-node:after{display:none}.ideas-page .map-node{border-top:2px solid var(--ink);border-bottom:2px solid var(--red);padding:18px}.ideas-page .map-node h2{font-size:20px}.ideas-page .map-output{font-size:28px}.ideas-page .structure-band,.ideas-page .learning-band{display:block;padding:17px 18px}.ideas-page .band-title{display:block;font-size:16px}.ideas-page .band-description{display:block;text-align:left;margin-top:7px;font-size:13px}.ideas-page .compatibility{grid-template-columns:1fr;gap:14px;padding:29px 0 35px}.ideas-page .method-section{grid-template-columns:1fr;gap:8px;padding:34px 0 38px}.ideas-page .method-heading h2{font-size:clamp(31px,7.5vw,48px);margin-bottom:15px}.ideas-page .method-heading h3{font-size:25px;margin-bottom:18px}.ideas-page .reading-list{grid-template-columns:1fr}}
+@media(max-width:430px){.ideas-page .concept-map{padding:15px 12px}.ideas-page .map-stages{grid-template-columns:1fr;gap:16px;padding:18px 0}.ideas-page .map-node{display:grid;grid-template-columns:1fr 1fr;column-gap:18px;padding:18px}.ideas-page .map-constraint{grid-column:1/-1;min-height:0;margin-bottom:10px}.ideas-page .map-node h2{grid-column:1/-1;margin-bottom:13px;font-size:22px}.ideas-page .map-input{grid-column:1;min-height:0;align-self:center}.ideas-page .map-output{grid-column:2;grid-row:3/5;font-size:26px;padding:10px 0 0}.ideas-page .map-tool{grid-column:1;min-height:0;padding-top:9px}.ideas-page .ideas-hero>h1{font-size:41px;letter-spacing:-1.3px}.ideas-page .band-description{font-size:13px}}
