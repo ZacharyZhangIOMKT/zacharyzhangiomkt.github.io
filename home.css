@@ -1,0 +1,14 @@
+/* Homepage-specific layout; shared site colors and typography are inherited. */
+.home-interests .note-top{margin-bottom:30px}
+.home-interests .note-row{grid-template-columns:90px 1fr}
+.home-interests .note-row:last-child{padding-bottom:0}
+.home-research .research-columns h3{margin-top:0}
+.home-research h4{font-family:var(--sans);font-size:16px;line-height:1.5;font-weight:600;color:var(--accent);margin:24px 0 9px}
+.home-research h4:first-of-type{margin-top:20px}
+.home-research strong{font-weight:600;color:var(--ink)}
+.home-destinations{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px;border-top:1px solid var(--line);padding-top:42px;padding-bottom:65px}
+.home-destinations article+article{border-left:1px solid var(--line);padding-left:28px}
+.home-destinations h2{font-size:27px;line-height:1.25;letter-spacing:-.4px;margin-bottom:18px}
+.home-destinations p{font-size:16px;line-height:1.8}
+@media(max-width:850px){.home-interests .note-row{display:block}.home-interests .note-label{display:block;margin-bottom:5px}.home-destinations{grid-template-columns:1fr;gap:28px}.home-destinations article+article{border-left:0;border-top:1px solid var(--line);padding-left:0;padding-top:28px}}
+@media(max-width:620px){.home-interests .note-row{display:grid;grid-template-columns:90px 1fr}.home-destinations{padding-top:32px;padding-bottom:44px}.home-destinations h2{font-size:28px}}
